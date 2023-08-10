@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="index.js" type="text/Javascript">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+    <h1><font color="purple">Determinant</font></h1>
+    <h3>3 X 3</h3>
+    <form name="f1">
+        [ a11<input type="text" size="1" name="t1">&nbsp;&nbsp;
+        a12<input type="text" size="1" name="t2">&nbsp;&nbsp;
+        a13<input type="text" size="1" name="t3"><br><br>
+        &nbsp;&nbsp;a21<input type="text" size="1" name="t4">&nbsp;&nbsp;
+        a22<input type="text" size="1" name="t5">&nbsp;&nbsp;
+        a23<input type="text" size="1" name="t6"><br><br>
+        &nbsp;&nbsp;a31<input type="text" size="1" name="t7">&nbsp;&nbsp;
+        a32<input type="text" size="1" name="t8">&nbsp;&nbsp;
+        a33<input type="text" size="1" name="t9">&nbsp;]<br><br>
+        
+        
+        Result&nbsp;<input type="text" size="5" name="t10"><br><br>
+        
+        <input type="button" value="Result" OnClick="determinant()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="reset" value="Clear">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <h1><font color="purple">Minor and Cofactor</font></h1>
+        
+        
+        M11&nbsp;<input type="text"  name="t11"><br><br>
+        A11&nbsp;&nbsp;<input type="text" name="t20"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M12&nbsp;<input type="text"  name="t12"><br><br>
+        A12&nbsp;&nbsp;<input type="text" name="t21"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M13&nbsp;<input type="text"  name="t13"><br><br>
+        A13&nbsp;&nbsp;<input type="text" name="t22"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M21&nbsp;<input type="text"  name="t14"><br><br>
+        A21&nbsp;&nbsp;<input type="text" name="t23"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        
+        M22&nbsp;<input type="text"  name="t15"><br><br>
+        A22&nbsp;&nbsp;<input type="text" name="t24"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M23&nbsp;<input type="text"  name="t16"><br><br>
+        A23&nbsp;&nbsp;<input type="text" name="t25"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M31&nbsp;
+<input type="text"  name="t17"><br><br>
+        A31&nbsp;&nbsp;&nbsp;<input type="text" name="t26"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        M32&nbsp;<input type="text"  name="t18"><br><br>
+        A32&nbsp;&nbsp;<input type="text" name="t27"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>    
+        M33&nbsp;<input type="text"  name="t19"><br><br>
+        A33&nbsp;&nbsp;<input type="text" name="t28"><br><br>
+        <input type="button" value="Minor" OnClick="minor()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+        
+        
+        
+        <h1><font color="purple">Matrix of the Cofactor </font></h1>
+        
+        
+        [ A11<input type="text" size="1" name="t29">&nbsp;&nbsp;
+        A12<input type="text" size="1" name="t30">&nbsp;&nbsp;
+        A13<input type="text" size="1" name="t31"><br><br>
+        &nbsp;&nbsp;A21<input type="text" size="1" name="t32">&nbsp;&nbsp;
+        A22<input type="text" size="1" name="t33">&nbsp;&nbsp;
+        A23<input type="text" size="1" name="t34"><br><br>
+        &nbsp;&nbsp;A31<input type="text" size="1" name="t35">&nbsp;&nbsp;
+        A32<input type="text" size="1" name="t36">&nbsp;&nbsp;
+        A33<input type="text" size="1" name="t37">&nbsp;]<br><br>
+        
+        
+        <input type="button" value="Cofactor" OnClick="matrix()">
+        
+        
+        <h1><font color="purple">Transpose of Cofactor matrix</font></h1>
+        
+        
+        
+        
+        
+        [ A11<input type="text" size="1" name="t38">&nbsp;&nbsp;
+        A12<input type="text" size="1" name="t39">&nbsp;&nbsp;
+        A13<input type="text" size="1" name="t40"><br><br>
+        &nbsp;&nbsp;A21<input type="text" size="1" name="t41">&nbsp;&nbsp;
+        A22<input type="text" size="1" name="t42">&nbsp;&nbsp;
+        A23<input type="text" size="1" name="t43"><br><br>
+        &nbsp;&nbsp;A31<input type="text" size="1" name="t44">&nbsp;&nbsp;
+        A32<input type="text" size="1" name="t45">&nbsp;&nbsp;
+        A33<input type="text" size="1" name="t46">&nbsp;]<br><br>
+        
+        
+        
+        
+        
+        
+        <input type="button" value="Transpose" OnClick="transpose()">
+        
+        
+        
+        <h1><font color="purple">A<sup>-1</sup></font></h1>
+        
+       =&nbsp;&nbsp;  1/<input type="text" size="1" name="t56"> &nbsp;&nbsp;&nbsp;X &nbsp;&nbsp; [&nbsp;<input type="text" size="1" name="t47">&nbsp;&nbsp;
+         <input type="text" size="1" name="t48">&nbsp;&nbsp;
+         <input type="text" size="1" name="t49"><br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="1" name="t50">&nbsp;&nbsp;
+         <input type="text" size="1" name="t51">&nbsp;&nbsp;
+             <input type="text" size="1" name="t52"><br><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="1" name="t53">&nbsp;&nbsp;
+             <input type="text" size="1" name="t54">&nbsp;&nbsp;
+             <input type="text" size="1" name="t55">&nbsp;]<br><br>
+             
+             
+             
+             
+             
+             
+           
+             
+             
+             
+             
+             
+             
+             
+             <input type="button" value="Calculate" OnClick="multiplication()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="reset" value="Clear">
+             
+             
+             
+             <h1><font color="purple">Determinant </font></h1>
+             
+             
+             
+             
+             
+        <h3>2 X 2</h3>
+        
+        [&nbsp;a11<input type="text" size="1" name="t59">&nbsp;&nbsp;
+        a12<input type="text" size="1" name="t60"><br><br>
+        &nbsp;&nbsp;a21<input type="text" size="1" name="t61">&nbsp;&nbsp;
+        a22<input type="text" size="1" name="t62">&nbsp;]<br><br>
+        
+        
+        Result&nbsp;&nbsp;<input type="text" size="10" name="t58"><br><br>
+<input type="button" value="Result" OnClick="determinant2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="reset" value="Clear"><br><br>
+
+
+       <h1><font color="purple">Minor and Cofactor</font></h1>
+       
+       
+       M11&nbsp;<input type="text" name="t63"><br><br>
+       A11&nbsp;&nbsp;<input type="text" name="t67"><br><br>
+       
+       
+       <input type="button" value="Minor" OnClick="minor2()">
+       &nbsp;&nbsp;&nbsp;
+       <input type="button" value="Cofactor" OnClick="cofactor2()"><br><br>
+       
+       M12&nbsp;<input type="text" name="t64"><br><br>
+       A11&nbsp;&nbsp;<input type="text" name="t68"><br><br>
+       
+       
+       
+       
+       <input type="button" value="Minor" OnClick="minor2()">&nbsp;&nbsp;&nbsp;
+       
+       <input type="button" value="Cofactor" OnClick="cofactor2()"><br><br>
+       
+       
+       M21&nbsp;<input type="text" name="t65"><br><br>
+       A21&nbsp;&nbsp;<input type="text" name="t69"><br><br>
+       
+       
+       <input type="button" value="Minor" OnClick="minor2()">&nbsp;&nbsp;&nbsp;
+       <input type="button" value="Cofactor" OnClick="cofactor()"><br><br>
+       
+       
+       M22&nbsp;<input type="text" name="t66"><br><br>
+       A22&nbsp;&nbsp;<input type="text" name="t70"><br><br>
+       
+       
+       <input type="button" value="Minor" OnClick="minor2()">&nbsp;&nbsp;&nbsp;
+       <input type="button" value="Cofactor" OnClick="cofactor2">
+       
+       
+       
+       
+       <h1><font color="purple">Matrix of the Cofactor</font></h1>
+       
+      
+       
+       [&nbsp;<input type="text" size="1" name="t71">&nbsp;&nbsp;
+       <input type="text" size="1" name="t72"><br><br>
+       &nbsp;&nbsp;<input type="text" size="1" name="t73">&nbsp;&nbsp;
+       <input type="text" size="1" name="t74">&nbsp;]<br><br>
+       
+       <input type="button" value="Co-factor" OnClick="matrix2()">
+       
+       
+       
+       
+       
+       <h1><font color="purple">Transpose of the Cofactor</font></h1>
+       
+       
+       
+       [&nbsp;<input type="text" size="1" name="t75">&nbsp;&nbsp;
+       <input type="text" size="1" name="t76"><br><br>
+       &nbsp;&nbsp;<input type="text" size="1" name="t77">&nbsp;&nbsp;
+       <input type="text" size="1" name="t78">&nbsp;]<br><br>
+       
+       <input type="button" value="Transpose" OnClick="transpose2()">
+
+
+
+  
+
+        <h1><font color="purple">A<sup>-1</sup></font></h1>
+        
+        
+        
+       = 1/<input type="text" size="1" name="t83"> &nbsp;&nbsp;&nbsp;X &nbsp;&nbsp; [&nbsp;<input type="text" size="1" name="t79">&nbsp;&nbsp;
+         <input type="text" size="1" name="t80"><br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="1" name="t81">&nbsp;&nbsp;
+         <input type="text" size="1" name="t82">&nbsp;]<br><br>
+         
+         
+         
+         
+         <input type="button" value="Calculate" OnClick="inverse2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="reset" value="Clear">
+             
+             
+             
+         
+         
+        
+        
+        
+        
+         
+        
+    </form>
+        
+</body>
+</html>
